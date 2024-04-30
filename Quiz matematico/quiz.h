@@ -14,3 +14,8 @@ typedef struct Arv{
     struct Arv *left;
     struct Arv *right;
 }Arv;
+
+void explicacaoGame();
+void carregando();
+
+void delay(int ms);

@@ -5,4 +5,4 @@ void insereNome(char **nome);
 void limpa();
 void abertura();
 
-void pausa(int segundos);
+void pausa(double segundos);

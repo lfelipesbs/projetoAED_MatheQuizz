@@ -34,13 +34,14 @@ int nomeValido(char *nome){
     }
     if(!nome_valido){
         printf("Por favor, digite um nome válido apenas com letras do alfabeto.\n");
-        pausa(2);
+        pausa(2.0);
         free(nome);
         return 0;
     }else{
         limpa();
         abertura();
         printf("Bem-vindo, %s!\n", nome);
+        pausa(2.0);
         return 1;
     }
 }
@@ -71,7 +72,7 @@ void abertura(){
     printf("\n");
 }
 
-void pausa(int segundos){
+void pausa(double segundos){
     #ifdef _WIN32
         Sleep(segundos * 1000);
     #else
