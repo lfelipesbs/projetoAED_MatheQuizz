@@ -88,3 +88,25 @@ void criaArv(FILE* f, Arv** root){
         inserir(root, pergunta);
     }
 }
+
+int acertou(double a, double x){
+    if(a == x){
+        return 1;
+    }
+    return 0;
+}
+
+Arv* percorreArv(Arv* root, double a){
+    Arv* aux = root;
+    
+    if(acertou(a, root->quiz.resposta)){
+        return aux->right;
+    }
+    return aux->left;
+}
+
+void imprimeEquacao(Arv* root){
+    limpa();
+    logo();
+    printf("\n\n%s\n-> ", root->quiz.equacao);
+}

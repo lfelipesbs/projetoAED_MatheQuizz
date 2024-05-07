@@ -11,8 +11,8 @@ typedef struct Pergunta{
 
 typedef struct Arv{
     Pergunta quiz;
-    struct Arv *left;
-    struct Arv *right;
+    struct Arv* left;
+    struct Arv* right;
 }Arv;
 
 void explicacaoGame();
@@ -24,3 +24,7 @@ void delay(int ms);
 Pergunta leArquivo(FILE* f);
 void inserir(Arv** root, Pergunta pergunta);
 void criaArv(FILE* f, Arv** root);
+
+int acertou(double a, double x);
+Arv* percorreArv(Arv* root, double a);
+void imprimeEquacao(Arv* root);

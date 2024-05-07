@@ -34,14 +34,14 @@ int nomeValido(char *nome){
     }
     if(!nome_valido){
         printf("Por favor, digite um nome válido apenas com letras do alfabeto.\n");
-        pausa(2.0);
+        pausa(1.5);
         free(nome);
         return 0;
     }else{
         limpa();
         abertura();
         printf("Bem-vindo, %s!\n", nome);
-        pausa(2.0);
+        pausa(1.5);
         return 1;
     }
 }
@@ -67,6 +67,15 @@ void abertura(){
     printf("*******************************\n");
     printf("*                             *\n");
     printf("*   BEM VINDO AO MATHEQUIZZ   *\n");
+    printf("*                             *\n");
+    printf("*******************************\n");
+    printf("\n");
+}
+
+void logo(){
+    printf("*******************************\n");
+    printf("*                             *\n");
+    printf("*         MATHEQUIZZ          *\n");
     printf("*                             *\n");
     printf("*******************************\n");
     printf("\n");
