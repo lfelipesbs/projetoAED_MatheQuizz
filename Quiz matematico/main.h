@@ -1,2 +1,0 @@
-void inicio();
-void carregaArquivo();
