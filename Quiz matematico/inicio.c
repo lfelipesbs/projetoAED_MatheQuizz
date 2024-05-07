@@ -64,11 +64,11 @@ void limpa(){
 }
 
 void abertura(){
-    printf("******************************\n");
-    printf("*                            *\n");
-    printf("*     BEM VINDO AO QUIZ      *\n");
-    printf("*                            *\n");
-    printf("******************************\n");
+    printf("*******************************\n");
+    printf("*                             *\n");
+    printf("*   BEM VINDO AO MATHEQUIZZ   *\n");
+    printf("*                             *\n");
+    printf("*******************************\n");
     printf("\n");
 }
 

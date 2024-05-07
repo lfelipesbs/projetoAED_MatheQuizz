@@ -29,6 +29,11 @@ void carregando(){
         limpa();
         abertura();
         explicacaoGame();
+        tresPontos();
+    }
+}
+
+void tresPontos(){
         printf(".");
         fflush(stdout);
         delay(600);
@@ -40,5 +45,46 @@ void carregando(){
         printf(".");
         fflush(stdout);
         delay(600);
+}
+
+Pergunta leArquivo(FILE* f){
+    Pergunta pergunta;
+
+    char buffer[100];
+
+    fscanf(f, "%d\n", &pergunta.id);
+    fgets(buffer, sizeof(buffer), f);
+
+    buffer[strcspn(buffer, "\n")] = 0;
+
+    pergunta.equacao = malloc(strlen(buffer) + 1);
+
+    strcpy(pergunta.equacao, buffer);
+
+    fscanf(f, "%lf\n", &pergunta.resposta);
+
+    return pergunta;
+}
+
+void inserir(Arv** root, Pergunta pergunta){
+    if(*root == NULL){
+        *root = (Arv*)malloc(sizeof(Arv));
+        (*root)->left = NULL;
+        (*root)->right = NULL;
+        (*root)->quiz = pergunta;
+    }else{
+        if(pergunta.id < (*root)->quiz.id){
+            inserir(&(*root)->left, pergunta);
+        }
+        if(pergunta.id > (*root)->quiz.id){
+            inserir(&(*root)->right, pergunta);
+        }
+    }
+}
+
+void criaArv(FILE* f, Arv** root){
+    for(int i = 0; i < 31; i++){
+        Pergunta pergunta = leArquivo(f);
+        inserir(root, pergunta);
     }
 }

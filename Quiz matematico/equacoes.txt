@@ -1,93 +1,93 @@
-1
-Qual é o resultado de 5+3?
+16
+Qual é a média dos números 5,10,15,20?
+12.5
 8
+Quantos lados tem um hexágono?
+6
+24
+Se 2^X = 16, qual é o valor de X?
+4
+4
+Qual é o resultado de 20÷5?
+4
+12
+Simplifique a expressão 2X+3X−5X para encontrar o coeficiente de X.
+0
+20
+Qual é a derivada de X^3 avaliada em X=1?
+3
+28
+Determine o limite de (X^2-1)/(X-1)​ quando X se aproxima de 1.
+2
 2
 Qual é o resultado de 15-7?
+8
+6
+Qual é a área de um retângulo com comprimento 5 e largura 3?
+15
+10
+Qual é maior, 2/3 ou 3/4? (responda 1 se for 2/3 ou 2 se for 3/4)
+2
+14
+Qual é o volume de um cubo com aresta de 3 metros?
+27
+18
+Se X^2−5X+6=0, quais o maior valor possivel de X?
+3
+22
+Qual é a integral indefinida de 3X^2, avaliada de 0 a 1?
+1
+26
+Calcule a área sob a curva Y=X^2 de X=0 a X=3.
+9
+30
+Qual é a dimensão de Hausdorff dos números racionais entre 0 e 1?
+0
+1
+Qual é o resultado de 5+3?
 8
 3
 Qual é o resultado de 4x6?
 24
-4
-Qual é o resultado de 20÷5?
-4
 5
 Se a sequência é 2,4,6,8,…, qual é o quinto termo?
 10
-6
-Qual é a área de um retângulo com comprimento 5 e largura 3?
-15
 7
 Converta 100 metros em centímetros.
 10000
-8
-Quantos lados tem um hexágono?
-6
 9
 Se X+2=7, qual é o valor de X?
 5
-10
-Qual é maior, 2/3 ou 3/4? (responda 1 se for 2/3 ou 2 se for 3/4)
-2
 11
 Resolva para X na equação: 3X−5=10.
 5
-12
-Simplifique a expressão 2X+3X−5X para encontrar o coeficiente de X.
-0
 13
 Qual é o perímetro de um triângulo com lados medindo 3, 4 e 5?
 12
-14
-Qual é o volume de um cubo com aresta de 3 metros?
-27
 15
 Se X^2−4X+4=0, qual é o valor de X?
 2
-16
-Qual é a média dos números 5,10,15,20?
-12.5
 17
 Qual é a mediana dos números 3,7,9,13,21?
 9
-18
-Se X^2−5X+6=0, quais o maior valor possivel de X?
-3
 19
 Qual é o valor do seno de 30∘?
 0.5
-20
-Qual é a derivada de X^3 avaliada em X=1?
-3
 21
 Se a soma dos ângulos internos de um triângulo é 180∘, qual é o ângulo externo de um ângulo interno de 60∘?
 120
-22
-Qual é a integral indefinida de 3X^2, avaliada de 0 a 1?
-1
 23
 Se uma sequência aritmética tem o primeiro termo 3 e a razão 5, qual é o décimo termo?
 48
-24
-Se 2^X = 16, qual é o valor de X?
-4
 25
 Resolva o sistema de equações 2X+3Y=6 e X−Y=2 para X.
 3
-26
-Calcule a área sob a curva Y=X^2 de X=0 a X=3.
-9
 27
 Qual é o terceiro termo na expansão de Taylor de e^X em torno de X=0?
 0.5
-28
-Determine o limite de (X^2-1)/(X-1)​ quando X se aproxima de 1.
-2
 29
 Use a fórmula de Bhaskara para resolver X^2−6X+9=0 Qual é o valor de X?
 3
-30
-Qual é a dimensão de Hausdorff dos números racionais entre 0 e 1?
-0
 31
 Resolva a equação diferencial Y'+Y=0 com condição inicial Y(0)=1. Qual é o valor de Y(1)? (responda com o valor aproximado de até 3 casas decimais)
 0.368
