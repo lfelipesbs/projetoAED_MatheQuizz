@@ -66,7 +66,7 @@ Pergunta leArquivo(FILE* f){
     return pergunta;
 }
 
-void inserir(Arv** root, Pergunta pergunta){
+void inserirArv(Arv** root, Pergunta pergunta){
     if(*root == NULL){
         *root = (Arv*)malloc(sizeof(Arv));
         (*root)->left = NULL;
@@ -74,10 +74,10 @@ void inserir(Arv** root, Pergunta pergunta){
         (*root)->quiz = pergunta;
     }else{
         if(pergunta.id < (*root)->quiz.id){
-            inserir(&(*root)->left, pergunta);
+            inserirArv(&(*root)->left, pergunta);
         }
         if(pergunta.id > (*root)->quiz.id){
-            inserir(&(*root)->right, pergunta);
+            inserirArv(&(*root)->right, pergunta);
         }
     }
 }
@@ -85,7 +85,7 @@ void inserir(Arv** root, Pergunta pergunta){
 void criaArv(FILE* f, Arv** root){
     for(int i = 0; i < 31; i++){
         Pergunta pergunta = leArquivo(f);
-        inserir(root, pergunta);
+        inserirArv(root, pergunta);
     }
 }
 
