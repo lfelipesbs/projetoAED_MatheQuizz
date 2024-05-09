@@ -34,7 +34,7 @@ int nomeValido(char *nome){
     }
     if(!nome_valido){
         printf("Por favor, digite um nome válido apenas com letras do alfabeto.\n");
-        pausa(1.5);
+        pausa(1.0);
         free(nome);
         return 0;
     }else{

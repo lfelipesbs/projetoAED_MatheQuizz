@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 #ifdef _WIN32
 #include <windows.h>
 #else
@@ -109,4 +110,23 @@ void imprimeEquacao(Arv* root){
     limpa();
     logo();
     printf("\n\n%s\n-> ", root->quiz.equacao);
+}
+
+int respostaValida(double* a){
+    if(scanf("%lf", a) == 1){
+        return 1;
+    }
+    printf("\nPor favor, digite um numero valido.\n");
+    pausa(1.0);
+    limpa();
+    return 0;
+}
+
+double insereResposta(){
+    while(1){
+        double a;
+        if(respostaValida(&a)){
+            return a;
+        }
+    }
 }

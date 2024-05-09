@@ -28,3 +28,5 @@ void criaArv(FILE* f, Arv** root);
 int acertou(double a, double x);
 Arv* percorreArv(Arv* root, double a);
 void imprimeEquacao(Arv* root);
+int respostaValida(double* a);
+double insereResposta();
