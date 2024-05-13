@@ -112,20 +112,23 @@ void imprimeEquacao(Arv* root){
     printf("\n\n%s\n-> ", root->quiz.equacao);
 }
 
-int respostaValida(double* a){
+int respostaValida(Arv* root, double* a){
     if(scanf("%lf", a) == 1){
         return 1;
     }
     printf("\nPor favor, digite um numero valido.\n");
     pausa(1.0);
+    while(getchar() != '\n' && !feof(stdin));
     limpa();
+    logo();
+    imprimeEquacao(root);
     return 0;
 }
 
-double insereResposta(){
+double insereResposta(Arv* root){
     while(1){
         double a;
-        if(respostaValida(&a)){
+        if(respostaValida(root, &a)){
             return a;
         }
     }
