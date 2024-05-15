@@ -1,0 +1,93 @@
+16
+Qual é a média dos números 10, 20, 30 e 40?
+25
+8
+Se Z+5=15, qual é o valor de Z?
+10
+24
+Calcule o limite de (X^3 - 8)/(X-2) quando X se aproxima de 2.
+12
+4
+Qual é o resultado de 25÷5?
+5
+12
+Qual é a área de uma esfera com raio de 3 metros?
+113.1
+20
+Qual é a derivada de 3X^3 avaliada em X=3?
+81
+28
+Qual é a quinta potência de 3?
+243
+2
+Qual é o resultado de 2+2?
+4
+6
+Quantos lados tem um decágono?
+10
+10
+Qual é maior, 1/2 ou 2/5? (responda 1 se for 1/2 ou 2 se for 2/5)
+1
+14
+Qual é o volume de um cilindro com altura de 5 metros e raio de base de 2 metros?
+62.83
+18
+Se X^2 - 9X + 20 = 0, qual é o maior valor possível de X?
+5
+22
+Calcule a área sob a curva Y=2X+1 de X=0 a X=2.
+6
+26
+Se 3^X = 81, qual é o valor de X?
+4
+30
+Qual é a dimensão de Hausdorff dos números inteiros?
+0
+1
+Qual é a soma de 7+8?
+15
+3
+Qual é o resultado de 2x7?
+14
+5
+Se a sequência é 1, 3, 5, 7, ..., qual é o quinto termo?
+9
+7
+Converta 500 metros em centímetros.
+50000
+9
+Se Y-10=10, qual é o valor de Y?
+20
+11
+Resolva para X na equação: X+X+10=40.
+15
+13
+Qual é o perímetro de um quadrado com lado medindo 10 metros?
+40
+15
+Se X^2−5X+6=0, qual é o valor de X?
+3
+17
+Qual é a mediana dos números 2, 5, 8, 11, 14?
+8
+19
+Qual é o valor do cosseno de 45∘?
+0.707
+21
+Se a soma dos ângulos internos de um quadrilátero é 360∘, qual é o ângulo externo de um ângulo interno de 90∘?
+90
+23
+Se uma sequência geométrica tem o primeiro termo 2 e a razão 3, qual é o quarto termo?
+54
+25
+Resolva o sistema de equações X+Y=10 e X−Y=4.
+X=7, Y=3
+27
+Qual é o quarto termo na expansão de Taylor de sin(X) em torno de X=0?
+0
+29
+Use a fórmula de Bhaskara para resolver X^2−4X+4=0. Qual é o valor de X?
+2
+31
+Resolva a equação diferencial Y'-2Y=0 com condição inicial Y(0)=1. Qual é o valor de Y(1)? (responda com o valor aproximado de até 3 casas decimais)
+7.389

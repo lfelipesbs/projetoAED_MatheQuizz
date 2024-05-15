@@ -1,0 +1,93 @@
+16
+Qual é a média dos números 2, 4, 6, 8?
+5
+8
+Se Y-3 = 4, qual é o valor de Y?
+7
+24
+Determine o limite de (3X^2-9)/(X-3) quando X se aproxima de 3.
+18
+4
+Qual é o resultado de 40÷5?
+8
+12
+Qual é o volume de uma esfera com raio de 2 metros?
+33.51
+20
+Qual é a derivada de 2X^2 avaliada em X=2?
+8
+28
+Qual é a quarta potência de 2?
+16
+2
+Qual é o resultado de 4+4?
+8
+6
+Quantos lados tem um octógono?
+8
+10
+Qual é maior, 3/4 ou 5/8? (responda 1 se for 3/4 ou 2 se for 5/8)
+1
+14
+Simplifique a expressão 3X-2X+X para encontrar o coeficiente de X.
+2
+18
+Se X^2 - 6X + 9 = 0, qual é o maior valor possível de X?
+3
+22
+Calcule a área sob a curva Y=3X de X=0 a X=1.
+1.5
+26
+Se 2^Y = 32, qual é o valor de Y?
+5
+30
+Qual é a dimensão de Hausdorff dos números racionais entre 0 e 2?
+0
+1
+Qual é a soma de 5+5?
+10
+3
+Qual é o resultado de 3x5?
+15
+5
+Se a sequência é 3, 6, 9, 12, ..., qual é o quinto termo?
+15
+7
+Converta 200 metros em centímetros.
+20000
+9
+Se X+2=7, qual é o valor de X?
+5
+11
+Resolva para X na equação: 3X−5=10.
+5
+13
+Qual é o perímetro de um triângulo com lados medindo 4, 5 e 6?
+15
+15
+Se X^2−4X+4=0, qual é o valor de X?
+2
+17
+Qual é a mediana dos números 3,7,9,13,21?
+9
+19
+Qual é o valor do seno de 30∘?
+0.5
+21
+Se a soma dos ângulos internos de um triângulo é 180∘, qual é o ângulo externo de um ângulo interno de 60∘?
+120
+23
+Se uma sequência aritmética tem o primeiro termo 3 e a razão 5, qual é o décimo termo?
+48
+25
+Resolva o sistema de equações 2X+3Y=6 e X−Y=2 para X.
+3
+27
+Qual é o terceiro termo na expansão de Taylor de e^X em torno de X=0?
+0.5
+29
+Use a fórmula de Bhaskara para resolver X^2−6X+9=0 Qual é o valor de X?
+3
+31
+Resolva a equação diferencial Y'+Y=0 com condição inicial Y(0)=1. Qual é o valor de Y(1)? (responda com o valor aproximado de até 3 casas decimais)
+0.368

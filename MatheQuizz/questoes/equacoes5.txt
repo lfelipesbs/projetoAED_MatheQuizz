@@ -1,0 +1,93 @@
+16
+Qual é a média dos números 12, 24, 36 e 48?
+30
+8
+Se W+10=20, qual é o valor de W?
+10
+24
+Calcule o limite de (X^3 - 1)/(X-1) quando X se aproxima de 1.
+3
+4
+Qual é o resultado de 35÷7?
+5
+12
+Qual é a área de uma superfície esférica com raio de 4 metros?
+201.06
+20
+Qual é a derivada de 4X^2 avaliada em X=4?
+32
+28
+Qual é a terceira potência de 4?
+64
+2
+Qual é o resultado de 1+1?
+2
+6
+Quantos lados tem um heptágono?
+7
+10
+Qual é maior, 3/5 ou 4/7? (responda 1 se for 3/5 ou 2 se for 4/7)
+1
+14
+Qual é o volume de um cilindro com altura de 4 metros e raio de base de 3 metros?
+113.1
+18
+Se X^2 - 3X + 2 = 0, qual é o maior valor possível de X?
+2
+22
+Calcule a área sob a curva Y=2X^2 de X=1 a X=3.
+26
+26
+Se 5^X = 625, qual é o valor de X?
+4
+30
+Qual é a dimensão de Hausdorff dos números algébricos?
+0
+1
+Qual é a soma de 9+9?
+18
+3
+Qual é o resultado de 6x9?
+54
+5
+Se a sequência é 5, 10, 15, 20, ..., qual é o quinto termo?
+25
+7
+Converta 1000 metros em centímetros.
+100000
+9
+Se X+9=18, qual é o valor de X?
+9
+11
+Resolva para X na equação: 2X−6=8.
+7
+13
+Qual é o perímetro de um hexágono regular com lado medindo 5 metros?
+30
+15
+Se X^2−10X+25=0, qual é o valor de X?
+5
+17
+Qual é a mediana dos números 1, 3, 5, 7, 9?
+5
+19
+Qual é o valor do seno de 60∘?
+0.866
+21
+Se a soma dos ângulos internos de um pentágono é 540∘, qual é o ângulo externo de um ângulo interno de 108∘?
+72
+23
+Se uma sequência aritmética tem o primeiro termo 2 e a razão 4, qual é o quinto termo?
+18
+25
+Resolva o sistema de equações X+2Y=14 e 2X−Y=4.
+X=6, Y=4
+27
+Qual é o quinto termo na expansão de Taylor de ln(1+X) em torno de X=0?
+0
+29
+Use a fórmula de Bhaskara para resolver X^2−10X+25=0. Qual é o valor de X?
+5
+31
+Resolva a equação diferencial Y'-Y=0 com condição inicial Y(0)=3. Qual é o valor de Y(1)? (responda com o valor aproximado de até 3 casas decimais)
+8.154

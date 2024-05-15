@@ -1,0 +1,93 @@
+16
+Qual é a média dos números 8, 16, 24 e 32?
+20
+8
+Se X-2=8, qual é o valor de X?
+10
+24
+Calcule o limite de (X^2 - 4)/(X-2) quando X se aproxima de 2.
+4
+4
+Qual é o resultado de 45÷5?
+9
+12
+Qual é o volume de um cone com altura de 3 metros e raio de base de 2 metros?
+12.57
+20
+Qual é a derivada de X^4 avaliada em X=2?
+32
+28
+Qual é a sexta potência de 2?
+64
+2
+Qual é o resultado de 3+3?
+6
+6
+Quantos lados tem um pentágono?
+5
+10
+Qual é maior, 1/3 ou 1/4? (responda 1 se for 1/3 ou 2 se for 1/4)
+1
+14
+Qual é o volume de uma pirâmide com altura de 6 metros e base quadrada de lado 4 metros?
+32
+18
+Se X^2 - 8X + 15 = 0, qual é o maior valor possível de X?
+5
+22
+Calcule a área sob a curva Y=X^3 de X=0 a X=2.
+8
+26
+Se 4^X = 256, qual é o valor de X?
+4
+30
+Qual é a dimensão de Hausdorff dos números primos?
+0
+1
+Qual é a soma de 10+10?
+20
+3
+Qual é o resultado de 8x4?
+32
+5
+Se a sequência é 10, 20, 30, 40, ..., qual é o quinto termo?
+50
+7
+Converta 300 metros em centímetros.
+30000
+9
+Se Y+6=12, qual é o valor de Y?
+6
+11
+Resolva para X na equação: 5X−15=10.
+5
+13
+Qual é o perímetro de um retângulo com lados medindo 6 e 8 metros?
+28
+15
+Se X^2−6X+9=0, qual é o valor de X?
+3
+17
+Qual é a mediana dos números 4, 8, 12, 16, 20?
+12
+19
+Qual é o valor do tangente de 45∘?
+1
+21
+Se a soma dos ângulos internos de um hexágono é 720∘, qual é o ângulo externo de um ângulo interno de 120∘?
+60
+23
+Se uma sequência geométrica tem o primeiro termo 1 e a razão 2, qual é o quinto termo?
+16
+25
+Resolva o sistema de equações 3X+4Y=12 e 2X−2Y=0.
+X=2, Y=2
+27
+Qual é o segundo termo na expansão de Taylor de cos(X) em torno de X=0?
+0
+29
+Use a fórmula de Bhaskara para resolver X^2−8X+16=0. Qual é o valor de X?
+4
+31
+Resolva a equação diferencial Y'+3Y=0 com condição inicial Y(0)=2. Qual é o valor de Y(1)? (responda com o valor aproximado de até 3 casas decimais)
+0.246
