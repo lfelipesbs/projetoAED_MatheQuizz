@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "ranking.h"
+#include "cores.h"
 
 void inserirNo(Node** head, Jogador p){
     Node* novo = (Node*)malloc(sizeof(Node));
@@ -23,8 +25,12 @@ int comparaNos(Node *a, Node *b, time_t horaAtual){
     if(a->pessoa.pontos != b->pessoa.pontos){
         return b->pessoa.pontos - a->pessoa.pontos;
     }
-    if(difftime(horaAtual, a->pessoa.hora) != difftime(horaAtual, b->pessoa.hora)){
-        return difftime(horaAtual, a->pessoa.hora) - difftime(horaAtual, b->pessoa.hora);
+
+    double diffA = difftime(horaAtual, a->pessoa.hora);
+    double diffB = difftime(horaAtual, b->pessoa.hora);
+
+    if (diffA != diffB) {
+        return (diffA > diffB) - (diffA < diffB);
     }
     return strcmp(a->pessoa.nome, b->pessoa.nome);
 }
@@ -64,4 +70,36 @@ void ordenaNo(Node **head, time_t horaAtual){
         }
         lptr = ptr1;
     }while(trocou);
+}
+
+void imprimeNo(Node *head){
+    if(head == NULL){
+        printf(RED "Ranking vazio\n" COLOR_RESET);
+        return;
+    }
+
+    int i = 1;
+
+    while(head != NULL){
+        char buffer[9];
+    
+        strftime(buffer, sizeof(buffer), "%H:%M:%S", head->pessoa.hora);
+
+        printf(GRN "%d. %s - %d pontos" COLOR_RESET ".........." YEL "%s\n" COLOR_RESET, i, head->pessoa.nome, head->pessoa.pontos, buffer);
+        
+        head = head->next;
+        i++;
+    }
+}
+
+void deletaLista(Node **head){
+    Node *current = *head;
+    Node *next;
+
+    while(current != NULL){
+        next = current->next;
+        free(current);
+        current = next;
+    }
+    *head = NULL;
 }

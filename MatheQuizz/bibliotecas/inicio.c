@@ -9,6 +9,7 @@
 #include <unistd.h>
 #endif
 #include "inicio.h"
+#include "cores.h"
 
 void alocaNome(char **nome){
     char buffer[100];
@@ -64,20 +65,20 @@ void limpa(){
 }
 
 void abertura(){
-    printf("*******************************\n");
+    printf(CYN "*******************************\n");
     printf("*                             *\n");
     printf("*   BEM VINDO AO MATHEQUIZZ   *\n");
     printf("*                             *\n");
-    printf("*******************************\n");
+    printf("*******************************\n" COLOR_RESET);
     printf("\n");
 }
 
 void logo(){
-    printf("*******************************\n");
+    printf(CYN "*******************************\n");
     printf("*                             *\n");
     printf("*         MATHEQUIZZ          *\n");
     printf("*                             *\n");
-    printf("*******************************\n");
+    printf("*******************************\n" COLOR_RESET);
     printf("\n");
 }
 

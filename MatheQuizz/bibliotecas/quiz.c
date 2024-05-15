@@ -9,6 +9,7 @@
 #endif
 #include "inicio.h"
 #include "quiz.h"
+#include "cores.h"
 
 void delay(int ms){
     #ifdef _WIN32
