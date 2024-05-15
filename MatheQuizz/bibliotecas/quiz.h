@@ -1,6 +1,7 @@
 typedef struct Jogador{
     char* nome;
     int pontos;
+    struct tm* hora;
 }Jogador;
 
 typedef struct Pergunta{

@@ -82,6 +82,11 @@ void quiz(){
         if(i != 4){
             root = percorreArv(root, respTemp);
         }else{
+            time_t rawtime;
+
+            time(&rawtime);
+            usuario.hora = localtime(&rawtime);
+            
             usuario.pontos = root->quiz.id * 20;
             printf("Final de jogo, voce fez %d pontos!\n\n", usuario.pontos);
             inserirNo(&head, usuario);
