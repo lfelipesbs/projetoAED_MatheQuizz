@@ -85,7 +85,7 @@ void imprimeNo(Node *head){
     
         strftime(buffer, sizeof(buffer), "%H:%M:%S", head->pessoa.hora);
 
-        printf(GRN "%d. %s - %d pontos" COLOR_RESET ".........." YEL "%s\n" COLOR_RESET, i, head->pessoa.nome, head->pessoa.pontos, buffer);
+        printf(GRN "%d. %s" COLOR_RESET " - " CYN "%d " COLOR_RESET GRN "pontos" COLOR_RESET ".........." YEL "%s\n" COLOR_RESET, i, head->pessoa.nome, head->pessoa.pontos, buffer);
         
         head = head->next;
         i++;

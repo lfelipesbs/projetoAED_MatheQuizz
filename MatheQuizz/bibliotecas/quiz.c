@@ -19,15 +19,14 @@ void delay(int ms){
     #endif
 }
 void explicacaoGame(){
-    // coloquem os prints aqui
-    printf("Lorem ipsum dolor sit amet. Eum dolorem ipsa aut iste Quis est impedit dolores est error nobis.");
-    printf("Ut aliquam voluptate et exercitationem beatae ea reprehenderit repudiandae rem quisquam voluptatem aut rerum exercitationem."); 
-    printf("Et magni suscipit est quae asperiores ut itaque eius eum fugit itaque in inventore ipsam aut tempora dolore et officia dolores.");
-    printf("Et mollitia omnis sit omnis fugiat sed nisi numquam?\n"); // print de teste
+    printf(GRN "MatheQuizz é um jogo de perguntas baseado em equações matemáticas, voltado para pessoas que gostam de brincar com números. ");
+    printf("Cada pergunta apresenta um desafio matemático, a cada resposta correta, a dificuldade aumenta, enquanto respostas erradas diminui. "); 
+    printf("No final, o jogo fornece uma pontuação baseada no desempenho, refletindo o raciocínio matemático do jogador. ");
+    printf("E aí? Já prepare o lápis e a borracha e vamos para o jogo!\n" COLOR_RESET);
 }
 
 void carregando(){
-    for(int i=0; i<5; i++){
+    for(int i=0; i<10; i++){
         limpa();
         abertura();
         explicacaoGame();

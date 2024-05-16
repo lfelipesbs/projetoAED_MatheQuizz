@@ -25,10 +25,10 @@ int main(void){
 
 void menu(){
     abertura();
-    printf("\n1 - Iniciar o jogo\n");
-    printf("2 - Ver o ranking\n");
-    printf("3 - Apagar o ranking\n");
-    printf("4 - Sair\n");
+    printf(GRN "\n1" COLOR_RESET " - " GRN "Iniciar o jogo\n" COLOR_RESET);
+    printf(GRN "2" COLOR_RESET " - " GRN "Ver o ranking\n" COLOR_RESET);
+    printf(GRN "3" COLOR_RESET " - " GRN "Apagar o ranking\n" COLOR_RESET);
+    printf(RED "4" COLOR_RESET " - " RED "Sair\n" COLOR_RESET);
     printf("-> ");
 }
 
@@ -45,7 +45,7 @@ void escolheOpcao(){
             carregaArquivo();
             inicio();
             quiz();
-            continua(1.0);
+            continua(3.0);
         case 2:
             time(&current_time);
 
@@ -53,10 +53,12 @@ void escolheOpcao(){
             logo();
             ordenaNo(&head, current_time);
             imprimeNo(head);
-            continua(5.0);
+            continua(7.0);
         case 3:
             limpa();
             logo();
+            printf(RED "Apagando o ranking...\n\n" COLOR_RESET);
+            pausa(1.5);
             deletaLista(&head);
             imprimeNo(head);
             continua(2.5);
@@ -69,7 +71,7 @@ void escolheOpcao(){
         default:
             limpa();
             logo();
-            printf("\nInsira uma opcao valida\n");
+            printf("\nInsira uma opcao valida!\n");
             continua(1.5);
     }
 }
@@ -142,15 +144,29 @@ void quiz(){
         imprimeEquacao(root);
         double respTemp = insereResposta(root);
         if(i != 4){
+            if(acertou(respTemp, root->quiz.resposta)){
+                printf(GRN "\n\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                pausa(1.0);
+            }else{
+                printf(RED "\n\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                pausa(1.0);
+            }
             root = percorreArv(root, respTemp);
         }else{
             time_t rawtime;
 
             time(&rawtime);
-            usuario.hora = localtime(&rawtime);
+            usuario.hora = malloc(sizeof(struct tm));
 
-            usuario.pontos = root->quiz.id * 20;
-            printf("Final de jogo, voce fez %d pontos!\n\n", usuario.pontos);
+            *usuario.hora = *localtime(&rawtime);
+
+            if(acertou(respTemp, root->quiz.resposta)){
+                usuario.pontos = root->quiz.id * 20;
+            }else{
+                usuario.pontos = root->quiz.id * 18;
+            }
+
+            printf("Final de jogo, voce fez " CYN "%d" COLOR_RESET " pontos!\n\n", usuario.pontos);
             inserirNo(&head, usuario);
         }
     }
