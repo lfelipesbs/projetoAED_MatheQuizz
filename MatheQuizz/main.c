@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <time.h>
 #ifdef _WIN32 
-#include ".\\bibliotecas\\inicio.c"
-#include ".\\bibliotecas\\quiz.c"
-#include ".\\bibliotecas\\ranking.c"
-#include ".\\bibliotecas\\cores.h"
+#include "bibliotecas\\inicio.c"
+#include "bibliotecas\\quiz.c"
+#include "bibliotecas\\ranking.c"
+#include "bibliotecas\\cores.h"
 #else
-#include "./bibliotecas/inicio.c"
-#include "./bibliotecas/quiz.c"
-#include "./bibliotecas/ranking.c"
-#include "./bibliotecas/cores.h"
+#include "bibliotecas/inicio.c"
+#include "bibliotecas/quiz.c"
+#include "bibliotecas/ranking.c"
+#include "bibliotecas/cores.h"
 #endif
 #include "main.h"
 
@@ -34,6 +34,7 @@ void menu(){
 
 void escolheOpcao(){
     int escolha;
+    time_t current_time;
     
     scanf("%d", &escolha);
 
@@ -46,7 +47,6 @@ void escolheOpcao(){
             quiz();
             continua(1.0);
         case 2:
-            time_t current_time;
             time(&current_time);
 
             limpa();
@@ -80,73 +80,60 @@ void inicio(){
     carregando();
 }
 
-void carregaArquivo(){
+void carregaArquivo() {
     srand(time(NULL));
     int arquivo = (rand() % 5) + 1;
 
-    switch(arquivo){
+    char filepath[50];
+
+    switch (arquivo) {
         case 1:
             #ifdef _WIN32
-            f = fopen(".\\questoes\\equacoes1.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes\\equacoes1.txt");
             #else
-            f = fopen("./questoes/equacoes1.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes/equacoes1.txt");
             #endif
-            if(f == NULL){
-                printf("\n\nNao foi possivel carregar o jogo, tente novamente mais tarde\n\n");
-                exit(1);
-            }
             break;
         case 2:
             #ifdef _WIN32
-            f = fopen(".\\questoes\\equacoes2.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes\\equacoes2.txt");
             #else
-            f = fopen("./questoes/equacoes2.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes/equacoes2.txt");
             #endif
-            if(f == NULL){
-                printf("\n\nNao foi possivel carregar o jogo, tente novamente mais tarde\n\n");
-                exit(1);
-            }
-            break; 
+            break;
         case 3:
             #ifdef _WIN32
-            f = fopen(".\\questoes\\equacoes3.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes\\equacoes3.txt");
             #else
-            f = fopen("./questoes/equacoes3.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes/equacoes3.txt");
             #endif
-            if(f == NULL){
-                printf("\n\nNao foi possivel carregar o jogo, tente novamente mais tarde\n\n");
-                exit(1);
-            }
-            break;       
+            break;
         case 4:
             #ifdef _WIN32
-            f = fopen(".\\questoes\\equacoes4.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes\\equacoes4.txt");
             #else
-            f = fopen("./questoes/equacoes4.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes/equacoes4.txt");
             #endif
-            if(f == NULL){
-                printf("\n\nNao foi possivel carregar o jogo, tente novamente mais tarde\n\n");
-                exit(1);
-            }
             break;
         case 5:
             #ifdef _WIN32
-            f = fopen(".\\questoes\\equacoes5.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes\\equacoes5.txt");
             #else
-            f = fopen("./questoes/equacoes5.txt", "r");
+            snprintf(filepath, sizeof(filepath), "questoes/equacoes5.txt");
             #endif
-            if(f == NULL){
-                printf("\n\nNao foi possivel carregar o jogo, tente novamente mais tarde\n\n");
-                exit(1);
-            }
             break;
         default:
             printf("\n\nHouve algum problema ao iniciar o jogo, tente novamente mais tarde\n\n");
             exit(1);
     }
 
-    criaArv(f, &root);
+    f = fopen(filepath, "r");
+    if (f == NULL) {
+        printf("\n\nNao foi possivel carregar o jogo, tente novamente mais tarde\n\n");
+        exit(1);
+    }
 
+    criaArv(f, &root);
     fclose(f);
 }
 
