@@ -161,8 +161,12 @@ void quiz(){
             *usuario.hora = *localtime(&rawtime);
 
             if(acertou(respTemp, root->quiz.resposta)){
+                printf(GRN "\n\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                pausa(1.0);
                 usuario.pontos = root->quiz.id * 20;
             }else{
+                printf(RED "\n\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                pausa(1.0);
                 usuario.pontos = root->quiz.id * 18;
             }
 
