@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <time.h>
-#ifdef WIN_32 
-#include ".\\bibliotecas/inicio.c"
-#include ".\\bibliotecas/quiz.c"
-#include ".\\bibliotecas/ranking.c"
-#include ".\\bibliotecas/cores.h"
+#ifdef _WIN32 
+#include ".\\bibliotecas\\inicio.c"
+#include ".\\bibliotecas\\quiz.c"
+#include ".\\bibliotecas\\ranking.c"
+#include ".\\bibliotecas\\cores.h"
 #else
 #include "./bibliotecas/inicio.c"
 #include "./bibliotecas/quiz.c"
@@ -86,8 +86,8 @@ void carregaArquivo(){
 
     switch(arquivo){
         case 1:
-            #ifdef WIN_32
-            f = fopen(".\\questoes/equacoes1.txt", "r");
+            #ifdef _WIN32
+            f = fopen(".\\questoes\\equacoes1.txt", "r");
             #else
             f = fopen("./questoes/equacoes1.txt", "r");
             #endif
@@ -97,8 +97,8 @@ void carregaArquivo(){
             }
             break;
         case 2:
-            #ifdef WIN_32
-            f = fopen(".\\questoes/equacoes2.txt", "r");
+            #ifdef _WIN32
+            f = fopen(".\\questoes\\equacoes2.txt", "r");
             #else
             f = fopen("./questoes/equacoes2.txt", "r");
             #endif
@@ -108,8 +108,8 @@ void carregaArquivo(){
             }
             break; 
         case 3:
-            #ifdef WIN_32
-            f = fopen(".\\questoes/equacoes3.txt", "r");
+            #ifdef _WIN32
+            f = fopen(".\\questoes\\equacoes3.txt", "r");
             #else
             f = fopen("./questoes/equacoes3.txt", "r");
             #endif
@@ -119,8 +119,8 @@ void carregaArquivo(){
             }
             break;       
         case 4:
-            #ifdef WIN_32
-            f = fopen(".\\questoes/equacoes4.txt", "r");
+            #ifdef _WIN32
+            f = fopen(".\\questoes\\equacoes4.txt", "r");
             #else
             f = fopen("./questoes/equacoes4.txt", "r");
             #endif
@@ -130,8 +130,8 @@ void carregaArquivo(){
             }
             break;
         case 5:
-            #ifdef WIN_32
-            f = fopen(".\\questoes/equacoes5.txt", "r");
+            #ifdef _WIN32
+            f = fopen(".\\questoes\\equacoes5.txt", "r");
             #else
             f = fopen("./questoes/equacoes5.txt", "r");
             #endif
