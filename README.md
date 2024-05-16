@@ -62,3 +62,9 @@ Escolhido pela sua flexibilidade e pela complexidade que depende do nível de or
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Paleta de Cores
+
+As constantes de cor utilizadas no projeto podem ser encontradas neste [link](https://gist.github.com/RabaDabaDoba/145049536f815903c79944599c6f952a).
+
+---
