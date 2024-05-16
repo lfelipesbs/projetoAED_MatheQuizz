@@ -146,10 +146,10 @@ void quiz(){
         if(i != 4){
             if(acertou(respTemp, root->quiz.resposta)){
                 printf(GRN "\n\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
-                pausa(1.0);
+                pausa(2.0);
             }else{
                 printf(RED "\n\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
-                pausa(1.0);
+                pausa(2.0);
             }
             root = percorreArv(root, respTemp);
         }else{
@@ -162,12 +162,17 @@ void quiz(){
 
             if(acertou(respTemp, root->quiz.resposta)){
                 printf(GRN "\n\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
-                pausa(1.0);
+                pausa(2.0);
                 usuario.pontos = root->quiz.id * 20;
             }else{
                 printf(RED "\n\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
-                pausa(1.0);
-                usuario.pontos = root->quiz.id * 18;
+                pausa(2.0);
+
+                if(root->quiz.id == 1){
+                    usuario.pontos = 0;
+                }else{
+                    usuario.pontos = root->quiz.id * 18;
+                }
             }
 
             printf("Final de jogo, voce fez " CYN "%d" COLOR_RESET " pontos!\n\n", usuario.pontos);
