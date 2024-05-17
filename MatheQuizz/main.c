@@ -145,10 +145,10 @@ void quiz(){
         double respTemp = insereResposta(root);
         if(i != 4){
             if(acertou(respTemp, root->quiz.resposta)){
-                printf(GRN "\n\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                printf(GRN "\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
                 pausa(2.0);
             }else{
-                printf(RED "\n\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                printf(RED "\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
                 pausa(2.0);
             }
             root = percorreArv(root, respTemp);
@@ -161,11 +161,11 @@ void quiz(){
             *usuario.hora = *localtime(&rawtime);
 
             if(acertou(respTemp, root->quiz.resposta)){
-                printf(GRN "\n\nParabens, voce acertou! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                printf(GRN "\nParabens, voce acertou!\n" COLOR_RESET);
                 pausa(2.0);
                 usuario.pontos = root->quiz.id * 20;
             }else{
-                printf(RED "\n\nEita, resposta errada! Vamos para a proxima pergunta...\n" COLOR_RESET);
+                printf(RED "\nEita, resposta errada!\n" COLOR_RESET);
                 pausa(2.0);
 
                 if(root->quiz.id == 1){
@@ -175,7 +175,7 @@ void quiz(){
                 }
             }
 
-            printf("Final de jogo, voce fez " CYN "%d" COLOR_RESET " pontos!\n\n", usuario.pontos);
+            printf("\nFinal de jogo, voce fez " CYN "%d" COLOR_RESET " pontos!\n\n", usuario.pontos);
             inserirNo(&head, usuario);
         }
     }

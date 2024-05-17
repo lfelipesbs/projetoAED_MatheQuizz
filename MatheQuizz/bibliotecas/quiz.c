@@ -18,6 +18,7 @@ void delay(int ms){
     usleep(ms * 1000);
     #endif
 }
+
 void explicacaoGame(){
     printf(GRN "MatheQuizz é um jogo de perguntas baseado em equações matemáticas, voltado para pessoas que gostam de brincar com números. ");
     printf("Cada pergunta apresenta um desafio matemático, a cada resposta correta, a dificuldade aumenta, enquanto respostas erradas diminui. "); 
@@ -67,26 +68,31 @@ Pergunta leArquivo(FILE* f){
     return pergunta;
 }
 
+// Função para inserir um nó na árvore binária
 void inserirArv(Arv** root, Pergunta pergunta){
     if(*root == NULL){
+        // Se a raiz é nula, aloca memória para o novo nó
         *root = (Arv*)malloc(sizeof(Arv));
         (*root)->left = NULL;
         (*root)->right = NULL;
         (*root)->quiz = pergunta;
     }else{
+        // Insere o nó à esquerda se o ID da pergunta é menor, usando a chamada recursiva
         if(pergunta.id < (*root)->quiz.id){
             inserirArv(&(*root)->left, pergunta);
         }
+        // Insere o nó à direita se o ID da pergunta é maior
         if(pergunta.id > (*root)->quiz.id){
             inserirArv(&(*root)->right, pergunta);
         }
     }
 }
 
+// Função para criar a árvore binária a partir de um arquivo
 void criaArv(FILE* f, Arv** root){
     for(int i = 0; i < 31; i++){
-        Pergunta pergunta = leArquivo(f);
-        inserirArv(root, pergunta);
+        Pergunta pergunta = leArquivo(f); // Lê a pergunta do arquivo
+        inserirArv(root, pergunta);  // Insere a pergunta na árvore
     }
 }
 
@@ -97,15 +103,19 @@ int acertou(double a, double x){
     return 0;
 }
 
+// Função para percorrer a árvore binária baseada na resposta
 Arv* percorreArv(Arv* root, double a){
     Arv* aux = root;
     
+    // Se a resposta está correta, retorna o nó à direita
     if(acertou(a, root->quiz.resposta)){
         return aux->right;
     }
+    // Se a resposta está errada, retorna o nó à esquerda
     return aux->left;
 }
 
+// Função para imprimir a equação armazenada no nó
 void imprimeEquacao(Arv* root){
     limpa();
     logo();

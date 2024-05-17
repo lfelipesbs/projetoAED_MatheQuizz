@@ -69,6 +69,7 @@ void ordenaNo(Node **head, time_t horaAtual){
             ptr1 = ptr1->next;
         }
         lptr = ptr1;
+        
     }while(trocou);
 }
 
